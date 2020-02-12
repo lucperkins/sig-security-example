@@ -1,20 +1,22 @@
 {{ define "main" }}
+<section class="hero has-text-centered">
+  <div class="hero-body">
+    <div class="container">
+      <p class="title is-size-1 is-size-2-mobile has-text-weight-bold">
+        {{ .Title }}
+      </p>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
-    <div class="columns is-variable is-8 is-vcentered">
-      <div class="column">
-        <p class="title is-size-1 is-size-2-mobile has-text-weight-light">
-          {{ .Title }}
-        </p>
+    <figure class="figure">
+      <img src="/img/{{ .Params.img }}">
+    </figure>
 
-        <img src="/img/{{ .Params.img }}" style="margin: 0; padding: 0;">
-      </div>
-
-      <div class="column">
-        <div class="content is-medium">
-          {{ .Content }}
-        </div>
-      </div>
+    <div class="content is-medium">
+      {{ .Content }}
     </div>
   </div>
 </section>

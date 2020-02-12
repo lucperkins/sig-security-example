@@ -15,8 +15,11 @@ An attacker **inserts malicious code** into the project's version control system
 
 ### Partial prevention
 
-Require developers to [sign commits]. This makes it harder for a repository compromise or developer machine compromise to make a code modification. It also provides non-repudiation if there is a hack so that in most cases it is clear which developer was compromised.  Using 2FA or hardware tokens for developer access further increases the attack difficulty.
+Require developers to **[sign commits]**. This makes it harder for a repository compromise or developer machine compromise to make a code modification. It also provides non-repudiation if there is a hack so that in most cases it is clear which developer was compromised.
 
+Using [two-factor authentication][2fa] or hardware tokens for developer access further increases the attack difficulty.
+
+[2fa]: https://en.wikipedia.org/wiki/Multi-factor_authentication
 [git]: https://git-scm.com
 [juniper]: https://www.juniper.net/us/en/products-services/routing
 [linux]: https://linux.org
