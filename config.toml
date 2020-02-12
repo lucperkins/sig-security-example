@@ -1,0 +1,7 @@
+title = "SIG Security Scenarios"
+disableKinds = ["taxonomyTerm"]
+
+[[params.fonts]]
+name = "Open Sans"
+sizes = [300, 400, 600, 700]
+type = "sans_serif"

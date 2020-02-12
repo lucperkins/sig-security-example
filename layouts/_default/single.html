@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <div class="columns is-variable is-8 is-vcentered">
+      <div class="column">
+        <p class="title is-size-1 is-size-2-mobile has-text-weight-light">
+          {{ .Title }}
+        </p>
+
+        <img src="/img/{{ .Params.img }}" style="margin: 0; padding: 0;">
+      </div>
+
+      <div class="column">
+        <div class="content is-medium">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ $scenarios := site.RegularPages }}
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <p class="title is-size-1 is-size-2-mobile has-text-weight-light">
+        {{ site.Title }}
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="content is-medium">
+      <h2>
+        Scenarios
+      </h2>
+
+      <ul>
+        {{ range $scenarios }}
+        <li>
+          <a href="{{ .RelPermalink }}">
+            {{ .Title }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>
+{{ end }}

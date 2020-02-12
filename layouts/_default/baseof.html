@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "css.html" . }}
+
+    <title>
+      {{ site.Title }}
+    </title>
+  </head>
+  <body>
+    {{ block "main" . }}
+    {{ end }}
+  </body>
+</html>
